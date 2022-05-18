@@ -7,9 +7,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    color: #424642;
+    color: #595959;
     background-color: #D6E0F0;
-    min-height: 350vh;
+    min-height: 100vh;
 }
 
 
@@ -24,6 +24,7 @@ nav {
     letter-spacing: 0.8px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.25rem 4rem;
     background-color: rgba(0, 0, 0, 0.0);
     text-decoration: none;
@@ -32,7 +33,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 50%;
     list-style: none;
 }
 
@@ -40,10 +41,19 @@ nav div a {
     color: #393B44;
     text-decoration: none;
 }
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul li a {
     color: #393B44;
     text-decoration: none;
 }
+
+
 
 nav ul li a:hover {
     color: #fff;
@@ -51,6 +61,8 @@ nav ul li a:hover {
 
 .contact{
     border: 1px solid black;
+    padding: 10px 12px;
+    border-radius: 20px
 }
 
 /* hamburger */
@@ -105,7 +117,248 @@ nav ul li a:hover {
     transform-origin: 100% 0;
 }
 
+/* navbar-end */
 
+/* tittle */
+.tittle{
+    background: linear-gradient(180deg, #8D93AB, rgba(141,147,171, 0.4) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+/* about us-start */
+.about-us{
+    padding: 8rem 0;
+}
+
+
+.about-us-content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px 7rem;
+}
+.about-us-content img{
+    height: 18rem;
+}
+
+.about-us-content p{
+    text-align: center;
+    font-size:  1rem;
+    padding: 0  1.75rem 0 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+.about-us-content button {
+    margin: 1.5rem 0 0 0;
+    padding: 12px 25px;
+    background-color: rgba(84, 140, 168, 0.7);
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* about us-end */
+
+/* our product start */
+.container{
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40rem;
+    justify-content: center;
+}
+
+
+.card{
+    margin: 0 5rem;
+    width: 12rem;
+    height: 16rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card img{
+    width: 8rem;
+    margin-bottom: 0.75rem;
+}
+
+.image-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tittle-product{
+    font-size: 1rem;
+    margin: 1.25rem 0 0.75rem  0;
+}
+
+.price-product{
+    font-size: 1rem;
+}
+/* our product end */
+
+/* footer start */
+footer{
+    padding: 2.5rem 2.5rem 0 2.5rem ;
+    color: #548CA8;
+}
+
+.footer-top{
+    display: flex;
+}
+
+.footer-bottom{
+    color: #676767;
+    margin-top: 2rem;
+    background-color: #FAFAFF;
+    height: 3rem;
+    width: 100%;
+    border-radius: 6rem 6rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -10px 50px rgba(143, 205, 247, 0.25);;
+}
+
+.footer-content{
+    width: 33.33%;
+    padding: 0.5rem;
+    
+
+}
+.footer-content2{
+    margin: 0 5rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.footer-content h1 a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #548CA8;
+}
+
+.footer-content h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.footer-content h2{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-content2 a{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-content input{
+    margin: 0;
+    border: none;
+    height: 41px;
+    width: 14rem;
+    padding-left: 1rem;
+    border-radius: 10px 0  0 10px ;
+}
+
+.subscribe{
+    margin-top: 2rem ;
+}
+
+.footer-content button{
+    margin-left: -4px;
+    padding: 13px 25px;
+    background-color: rgba(84, 140, 168, 0.7);
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 0 10px 10px 0;
+    letter-spacing: 1px;
+}
+
+.sosmedFooter {
+    display: inline-flex;
+    opacity: 1;
+}
+
+.fab {
+    color: #333;
+    transform: scale(1);
+}
+
+.sosmedFooter .icon {
+    margin: 0 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.sosmedFooter .icon span {
+    position: relative;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sosmedFooter .icon span i {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.sosmedFooter .spotify:hover span {
+    background: #1db954;
+}
+
+.sosmedFooter .instagram:hover span {
+    background: #c13584;
+}
+
+.sosmedFooter .github:hover span {
+    background: #333;
+}
+
+.sosmedFooter .linkedin:hover span {
+    background: #0e76a8;
+}
+
+/* footer end */
 
 /* Responsive */
 /* tablet */
@@ -121,6 +374,8 @@ nav ul li a:hover {
     }
 
 }
+
+
 
 /* mobile */
 
