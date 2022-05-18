@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #424642;
+    background-color: #D6E0F0;
+    min-height: 350vh;
+}
+
+
+/* navbar */
+nav {
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 4rem;
+    background-color: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    list-style: none;
+}
+
+nav div a {
+    color: #393B44;
+    text-decoration: none;
+}
+nav ul li a {
+    color: #393B44;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.contact{
+    border: 1px solid black;
+}
+
+/* hamburger */
+.toggle {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.toggle input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    width: 48px;
+    height: 30px;
+    left: -10px;
+    top: -4px;
+}
+
+.toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #6da3e4;
+    transition: all 1s;
+}
+/* mobile nav */
+
+/* hamburger */
+
+.toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(-45deg) translate(-4px, 0px);
+}
+
+.toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(45deg) translate(1px, 1px);
+}
+
+.toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+.toggle span:nth-child(2) {
+    transform-origin: 100% 0;
+}
+
+.toggle span:nth-child(4) {
+    transform-origin: 100% 0;
+}
+
+
+
+/* Responsive */
+/* tablet */
+@media screen and (max-width: 768px) {
+    /* navbar */
+    nav {
+        font-size: 15px;
+        padding: 1rem 2rem;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+
+}
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+    .toggle {
+        display: flex;
+    }
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    nav ul {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 16rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 1s ease;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+        color: violet;
+    }
+
+    .toggle input:checked ~ ul {
+        top: 55px;
+        left: 0;
+    }
+
+}
+
